@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Restart</title>
+    <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/32j5tf.ico">
+    <script>
+        function restart(){
+        if (confirm("Are you sure?") == true) {window.location = 'chrome://restart';} else {alert("Alright! Bye!!"); close();}}
+    </script>
+    <style>
+        .vertical-center {
+            font-size:300%;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translateY(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        </style>
+</head>
+<body>
+    <button class="vertical-center" onclick="restart()">Click to restart!</button>
+</body>
+</html>
